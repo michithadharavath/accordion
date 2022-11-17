@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid">
+    <h2>accordian</h2>
+    
+    <div class="accordion" id="topics">
+        <div class="accordion-item">
+            <div class="accordion-header ">
+                <button class="accordion-button"data-bs-toggle="collapse" data-bs-target="#css" >
+                    <h2>CSS Tutiorial</h2>
+                </button>
+               
+            </div>
+            <div id="css" data-bs-parent="#topics" class="accordion-body accordion-collapse collapse show">
+                <p>somthing about css(cascade style sheet)...</p>
+            </div>
+
+        </div>
+        <div class="accordion-item" >
+            <div class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#html">
+                    <h2>html tutiorial</h2>
+                </button>
+                
+            </div>
+            <div id="html" data-bs-parent="#topics" class="accordion-body accordion-collapse collapse show">
+                <p>somthing about html(hyper text markup language)...</p>
+            </div>
+
+        </div>
+        <div class="accordion-item" >
+            <div class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#js">
+                    <h2>js tutiorial</h2>
+                </button>
+              
+            </div>
+            <div  id="js" data-bs-parent="#topics"    class="accordion-body accordion-collapse collapse show">
+                <p>somthing about js (javascript)...</p>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="../../node_modules/jquery/dist/jquery.js"></script>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
